@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body{
+        background-color: lightgrey;
+      }
+      .container-1 {
+        display: flex;
+        flex-direction: column;
+        
+      
+      }
+      .cont1-inner{
+        width:800px;
+        margin: 5% auto;
+        box-shadow: 0 0 30px 2px gray;
+        border-radius: 20px;
+
+        
+        
+      }
+      .container-above {
+        height: 35vh;
+        width: 800px;
+        margin: 0 auto;
+        padding: 5px 50px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        /* box-shadow: 0 0 10px 4px gray; */
+        
+      }
+
+      .container-above h1{
+        color:hsl(179, 62%, 43%);
+        margin: 40px 0;
+      }
+      .container-above h2{
+        color:hsl(71, 73%, 54%);
+        margin-bottom: 30px;
+      }
+
+      .container-above p{
+        color: lightgray;
+        font-weight:500px ;
+        font-size: 20px;
+      }
+      .container-below {
+        height: 45vh;
+        display: flex;
+        /* box-shadow: 0 0 10px 4px gray; */
+      }
+      
+      .container-2 {
+        background-color: hsl(179, 62%, 43%);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500px;
+        border-bottom-left-radius:20px ;
+        
+      }
+      .container-2 div{
+        display: flex;
+        align-items: center;
+        gap:10px
+      }
+      
+      .container-2 button {
+        background-color: hsl(71, 73%, 54%);
+        border: none;
+        padding: 20px 100px;
+        border-radius: 5px;
+        cursor: pointer;
+        color:white;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .container-3 {
+        background-color: hsla(179, 62%, 43%, 0.831);
+        width: 50%;
+        color: white;
+        border-bottom-right-radius:20px ;
+
+        
+      }
+      .inner{
+        width:300px;
+        margin: 0 auto;
+      }
+      .inner h2{
+        margin-top:60px;
+        margin-bottom:25px;
+      }
+      .inner p{
+        font-size: 18px;
+        font-weight: 500;
+      }
+@media screen and (width<=500px){
+  
+  body{
+    background-color: darkgrey;
+  }
+  .container-1 {
+        display: flex;
+        flex-direction: column;
+      
+      }
+      .cont1-inner{
+        width:400px;
+        margin: 5% auto;
+        /* box-shadow: 0 0 30px 2px gray; */
+        /* border-radius: 20px; */
+      }
+      .container-above {
+        height: 55vh;
+        width: 400px;
+        margin: 0 auto;
+        /* padding: 5px 50px; */
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        /* box-shadow: 0 0 10px 4px gray; */
+        
+      } 
+      .container-below {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* box-shadow: 0 0 10px 4px gray; */
+      }
+      .container-2 {
+        background-color: hsl(179, 62%, 43%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500px;
+        border-bottom-left-radius:0px ;
+        height: 50vh;
+        
+      }
+      .container-2 h2{
+        margin-top:30px;
+
+      }
+      .container-3 {
+        background-color: hsla(179, 62%, 43%, 0.521);
+        width: 100%;
+        color: white;
+        border-bottom-right-radius:20px ;
+        height: 50vh;
+        
+      }
+      
+      .inner{
+        width:250px;
+        line-height: 1.5;
+        margin: 0 auto;
+      }
+      .inner h2{
+        margin-top:60px;
+        margin-bottom:45px;
+      }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="cont1-inner">
+        <div class="container-above">
+          <h1>Join our community</h1>
+          <h2>30-day, hassle-free money back guarantee</h2>
+          <p>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing their
+            skills.
+          </p>
+        </div>
+        <div class="container-below">
+          <div class="container-2">
+            <h2>Monthly Subscription</h2>
+            <div>
+              <h1>&dollar;29 </h1>
+            <p>per month</p>
+            </div>
+            
+            <p>Full access for less than &dollar;1 a day</p>
+            <button>Sign Up</button>
+          </div>
+          <div class="container-3">
+            <div class="inner">
+              <h2>Why Us</h2>
+            <p>
+              Tutorials by industry experts Peer &amp; expert code review Coding
+              exercises Access to our GitHub repos Community forum Flashcard decks
+              New videos every week
+            </div>
+            </p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
